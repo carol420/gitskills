@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body >
+<ul>
+	<li><a href="../68f32d2e705b7094.jpg" >zheshiyizhangtu</a></li>
+	<li><a href="../13/0088b8bd592089ae.jpg" >zheshiyizhangtu</a></li>
+	<li><a href="../13/0f27e7d81479de08.jpg" >zheshiyizhangtu</a></li>
+</ul>
+<div>
+	<img src="" alt="image" >
+</div>
+</body>
+<script type="text/javascript">
+function show(whichpic){
+	var source=whichpic.href;
+	var imgsrc=document.getElementsByTagName('img')[0]
+	imgsrc.setAttribute('src',source)
+}
+
+var oUl=document.getElementsByTagName('ul')[0];
+var aLi=oUl.getElementsByTagName('a')
+console.log(aLi.length)
+for(var i=0;i<aLi.length;i++){
+	aLi[i].onclick=function(){
+		 show(this) ;
+		return false;
+		
+	}
+	// ali[i].onkeypress=aLi[i].onclick;
+}
+	
+
+</script>
+</html>
